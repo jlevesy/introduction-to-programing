@@ -13,7 +13,7 @@
       <div class="slides">
         <section>
           <h1>Introduction to <span class="small-title">(frontend) </span>programing</h1>
-          <h3>Upfluence university 2016/09/30</h3>
+          <h3>Upfluence (HACK)ademy 2016/09/30</h3>
           <h5>by Alexandre Papin & Julien Levesy</h5>
           <p class="small-text">
             Spoiler: Hackerman gifs included !
@@ -21,8 +21,7 @@
         </section>
         <section>
           <section>
-            <h1>Program ? Code ? Instructions ?</h1>
-            <p class="fragment">
+            <h1>Program ? Code ? Instructions ?</h1> <p class="fragment">
               What does it means ?
             </p>
           </section>
@@ -96,7 +95,7 @@
             <h2>Variables</h2>
             <p>
               <span class="fragment">It's like value...</span>
-              <span class="fragment">but they change !</span>
+              <span class="fragment">but they can change !</span>
             </p>
             <p class="fragment">
               they have a name
@@ -111,7 +110,7 @@
               var toto = "coucou";
 
               // Changing value of toto to "babar"
-              toto = babar;
+              toto = "babar";
 
               // WRONG!
               // Affecting a value to an undeclared variable bubu
@@ -177,9 +176,12 @@
               You will have to implement the "onGuess" function, called when the
               player 2 clicks on the "guess" button"
             </p>
-            <a class="fragment" href="https://codepen.io/jlevesy/pen/ALopag?editors=0010#0">
+            <p class="fragment">
+            <a href="https://codepen.io/jlevesy/pen/ALopag?editors=0010#0">
               https://codepen.io/jlevesy/pen/ALopag?editors=0010#0
             </a>
+            (open it, in your browser)
+            </p>
           </section>
           <section>
             <h2>Tools available</h2>
@@ -198,14 +200,119 @@
               giveHint(hint);
 
               // Will print to the screen "JE SAIS OU TU TE CACHES"
-              giveHint("JE SAIS OU TU TE CACHES);
+              giveHint("JE SAIS OU TU TE CACHES");
             </code></pre>
             <p class="fragment">
               Don't mind their implementation, it does the job ;)
             </p>
           </section>
         </section>
-        <section data-background-image="https://media.giphy.com/media/QbumCX9HFFDQA/giphy.gif">
+        <section>
+          <section>
+            <h2>So let's build our MVP</h2>
+            <p class="fragment">Our primary need: make the player 2 aware of the number to guess</p>
+            <p class="fragment">So let's make the onGuess function displays the value to guess</p>
+            <p class="fragment">Problem solved</p>
+          </section>
+          <section>
+            <h1>Hacking time !</h1>
+            <p class="fragment">
+              Make the "onGuess" function display the value to guess as a hint
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+          <h2>MVP is great, but it fails to fulfill our vision</h2>
+          <p class="fragment">It was supposed to be fun, d'uh! </p>
+          <p class="fragment">
+            So let's making fun by not giving the results, but only hints :)
+          </p>
+          </section>
+          <section>
+            <h2>How are we supposed to do ?</h2>
+            <p class="fragment"><strong>IF</strong> the guess is too high, display a hint</p>
+            <p class="fragment"><strong>IF</strong> the guess is too low, display another hint</p>
+            <p class="fragment"><strong>IF</strong> it's correct, display a congrats message</p>
+          </section>
+          <section>
+            <h2>How a program is executed</h2>
+            <p class="fragment">
+              A system executes instructions of programs one after another...
+            </p>
+            <p class="fragment">
+              ...but might want to choose which instructions are going to
+              executed...
+            </p>
+            <p class="fragment">
+              ... according to conditions for instance ;)
+            </p>
+          </section>
+          <section>
+            <h2>Introducing the IF structure</h2>
+            <pre><code class="javascript">
+              // Get the user age
+              // and  assign it to the declared variable age
+              var age = getUserAge();
+              if (age &gt; 50) {
+                // if age is greater than 50
+                // call the greetOldPerson function
+                greetOldPerson();
+              } else if (age &gt; 20) {
+                // else if age is greater than 20
+                // call the greetAdult function
+                greetAdult();
+              } else {
+                // else call the greet function
+                greet();
+              }
+            </code></pre>
+          </section>
+          <section>
+            <h1>Hacking time !</h1>
+            <p class="fragment"><strong>IF</strong> the guess is too high, display a hint</p>
+            <p class="fragment"><strong>IF</strong> the guess is too low, display another hint</p>
+            <p class="fragment">
+              <strong>IF</strong> it's correct, display a congrats message, as another hint
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Hey we might have a MLP here :)</h2>
+            <p class="fragment">
+              But it's ugly
+            </p>
+            <p class="fragment">
+              But might be even more funny with a custom victory message...
+            </p>
+            <p class="fragment">
+              Or &lt;Insert any idea here&gt; ...
+            </p>
+            <p class="fragment">
+              or Features, features, features ...
+            </p>
+            <p class="fragment">
+              and Features, features, features ...
+            </p>
+            <p class="fragment">
+              and maybe Features, features, features ...
+            </p>
+            <p class="fragment">
+              ...Welcome to a developer life ! :-D
+            </p>
+          </section>
+          <section data-background-image="https://media.giphy.com/media/QbumCX9HFFDQA/giphy.gif">
+            <h1>
+              Thanks !
+            </h1>
+            <p>
+              Questions ?
+            </p>
+            <p class="small-text">
+              Sources available on <a href="https://github.com/jlevesy/introduction-to-programing">github</a>
+            </p>
+          </section>
         </section>
       </div>
     </div>
