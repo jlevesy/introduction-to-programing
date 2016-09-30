@@ -4,17 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>UPF Academy - Introduction to programing</title>
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/prez.css">
     <style>
-      .small-title {
-        font-size: 35px !important;
-      }
-
-      .small-text {
-        font-size: 20px !important;
-      }
     </style>
   </head>
   <body>
@@ -98,18 +89,14 @@
         </section>
       </div>
     </div>
-
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+    <script src="js/prez.js"></script>
     <script>
 Reveal.initialize({
   history: true,
   dependencies: [
-  { src: 'plugin/markdown/marked.js' },
-  { src: 'plugin/markdown/markdown.js' },
-  { src: 'plugin/notes/notes.js', async: true },
-  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  { src: 'plugin/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
   ]
 });
     </script>
-  </body> </html>
+  </body>
+</html>
