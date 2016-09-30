@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>UPF Academy - Introduction to programing</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style>
+      .small-title {
+        font-size: 35px !important;
+      }
+
+      .small-text {
+        font-size: 20px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Introduction to <span class="small-title">(frontend) </span>programing</h1>
+          <h3>Upfluence university 2016/09/30</h3>
+          <h5>by Alexandre Papin & Julien Levesy</h5>
+          <p class="small-text">
+            Spoiler: Hackerman gifs included !
+          </p>
+        </section>
+        <section>
+          <section>
+            <h1>Program ? Code ? Instructions ?</h1>
+            <p class="fragment">
+              What does it means ?
+            </p>
+          </section>
+          <section>
+            <h2>What is a program ?</h2>
+            <p class="fragment">
+              A series of instructions a system can execute
+            </p>
+            <p class ="fragment">
+              In order to produce something usefull <span class="small-title fragment">or not...</span>
+            </p>
+            <p class="fragment">
+              Expressed in a language both the computer and the human can understand !
+            </p>
+          </section>
+          <section>
+            <h2>A parallel with cooking...</h2>
+            <p  class="fragment">
+              Imagine a cooking recipe
+            </p>
+            <p class="fragment">
+              It's composed of instructions !
+            </p>
+            <p class="fragment">
+              Like: "mix eggs with flour and sugar in a bowl"
+            </p>
+            <p class="fragment">
+              The recipe is the program
+            </p>
+            <p class="fragment">
+              And you're the system executing it ;)
+            </p>
+          </section>
+          <section>
+            <h2>Instructions for computers !</h2>
+            <p class="fragment">
+              Assign value 10 to variable named 'age'
+            </p>
+            <p class="fragment">
+              If 'age' is lower than 6 then call function 'greetChildren'
+            </p>
+            <p class="fragment">
+              Which translates in javascript into...
+            </p>
+            <pre><code class="javascript fragment">
+              var age = 10; // Assign value 10 to variable age
+              if (age &lt; 6) { // If age is lower than 6
+                greetChildren(); // call function greetChildren
+              }
+            </code></pre>
+          </section>
+          <section>
+            <h2>Best way to understand...</h2>
+            <p class="fragment">Is actually to practice</p>
+            <h2 class="fragment">So let's hack yourself back in time !</h2>
+            <p class="fragment small-title">Or build a simple guessing game...</p>
+          </section>
+          <section
+            data-background-image="https://media.giphy.com/media/l46C6sdSa5DVSJnLG/giphy.gif"
+            data-background-size="800px" >
+          </section>
+        </section>
+        <section data-background-image="https://media.giphy.com/media/QbumCX9HFFDQA/giphy.gif">
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+Reveal.initialize({
+  history: true,
+  dependencies: [
+  { src: 'plugin/markdown/marked.js' },
+  { src: 'plugin/markdown/markdown.js' },
+  { src: 'plugin/notes/notes.js', async: true },
+  { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+});
+    </script>
+  </body> </html>
