@@ -50,7 +50,7 @@ gulp.task('fonts', () => {
 });
 
 gulp.task('html', () => {
-  return gulp.src('src/html/index.html')
+  return gulp.src('src/html/**/*.html')
              .pipe(htmllint(htmlLintOptions))
              .pipe(gulp.dest('dist/'))
              .pipe(connect.reload());
