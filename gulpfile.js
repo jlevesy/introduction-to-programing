@@ -6,7 +6,6 @@ var gulp = require('gulp'),
     del = require('del');
 
 let htmlLintOptions = {
-  failOnError: true,
   rules: {
     'tag-self-close': false,
     'attr-name-style': 'dash',
