@@ -34,7 +34,7 @@
               In order to produce something usefull <span class="small-title fragment">or not...</span>
             </p>
             <p class="fragment">
-              Expressed in a language both the computer and the human can understand !
+              Expressed in a language both a computer and an human can understand !
             </p>
           </section>
           <section>
@@ -43,7 +43,7 @@
               Imagine a cooking recipe
             </p>
             <p class="fragment">
-              It's composed of instructions !
+              It is composed of instructions !
             </p>
             <p class="fragment">
               Like: "mix eggs with flour and sugar in a bowl"
@@ -52,13 +52,13 @@
               The recipe is the program
             </p>
             <p class="fragment">
-              And you're the system executing it ;)
+              And you're the system executing it !
             </p>
           </section>
           <section>
-            <h2>Instructions for computers !</h2>
+            <h2>Instructions for computers</h2>
             <p class="fragment">
-              Assign value 10 to variable named 'age'
+              Assign value 10 to variable called 'age'
             </p>
             <p class="fragment">
               If 'age' is lower than 6 then call function 'greetChildren'
@@ -120,7 +120,7 @@
           </section>
           <section>
             <h2>Functions</h2>
-            <p class="fragment">Block of reusable instructions</p>
+            <p class="fragment">Reusable block of instructions</p>
             <p class="fragment">Can take variables or values as arguments</p>
             <p class="fragment">Sometimes returns a result</p>
             <pre><code class="javascript fragment">
@@ -154,8 +154,7 @@
             <p class="fragment">
               Player 1 input a number to guess and starts the game
             </p>
-            <p class="fragment">
-              Player 2 make a guess and clicks the guess button
+            <p class="fragment"> Player 2 make a guess and clicks the guess button
             </p>
             <p class="fragment">
               Game displays a hint if the guess is too high or too low...
@@ -184,11 +183,7 @@
             </p>
           </section>
           <section>
-            <h2>Tools available</h2>
-            <pre><code class="fragment javascript">
-              // returns value input by Player 1
-              var valueToGuess = getValueToGuess();
-            </code></pre>
+            <h2>Tools available (1/2)</h2>
             <pre><code class="fragment javascript">
               // returns current guess by Player 2
               var valueToGuess = getPlayerGuess();
@@ -206,12 +201,10 @@
               Don't mind their implementation, it does the job ;)
             </p>
           </section>
-        </section>
-        <section>
           <section>
             <h2>So let's build our MVP</h2>
-            <p class="fragment">Our primary need: make the player 2 aware of the number to guess</p>
-            <p class="fragment">So let's make the onGuess function displays the value to guess</p>
+            <p class="fragment">Our primary requirement : make the player 2 aware of the number to guess</p>
+            <p class="fragment">So let's make the onGuess function display the value to guess</p>
             <p class="fragment">Problem solved</p>
           </section>
           <section>
@@ -224,28 +217,25 @@
         <section>
           <section>
           <h2>MVP is great, but it fails to fulfill our vision</h2>
-          <p class="fragment">It was supposed to be fun, d'uh! </p>
+          <p class="fragment">It was supposed to be fun, d'uh !</p>
           <p class="fragment">
-            So let's making fun by not giving the results, but only hints :)
+            So let's making fun by not giving the results, but only hints
           </p>
           </section>
           <section>
             <h2>How are we supposed to do ?</h2>
             <p class="fragment"><strong>IF</strong> the guess is too high, display a hint</p>
             <p class="fragment"><strong>IF</strong> the guess is too low, display another hint</p>
-            <p class="fragment"><strong>IF</strong> it's correct, display a congrats message</p>
+            <p class="fragment"><strong>IF</strong> it is correct, display a congrats message</p>
           </section>
           <section>
             <h2>How a program is executed</h2>
             <p class="fragment">
-              A system executes instructions of programs one after another...
+              A system executes instructions of a program one after another...
             </p>
             <p class="fragment">
-              ...but might want to choose which instructions are going to
-              executed...
-            </p>
-            <p class="fragment">
-              ... according to conditions for instance ;)
+              ...but we might want to run certain instructions if some
+              conditions are met
             </p>
           </section>
           <section>
@@ -269,17 +259,30 @@
             </code></pre>
           </section>
           <section>
+            <h2>Tools available (2/2)</h2>
+            <pre><code class="fragment javascript">
+              // returns value input by Player 1
+              var valueToGuess = getValueToGuess();
+            </code></pre>
+            <pre><code class="fragment javascript">
+              var valueToGuess = getPlayerGuess();
+              var hint = "PHILIPPE !";
+              giveHint(hint);
+            </code></pre>
+          </section>
+        </section>
+          <section>
             <h1>Hacking time !</h1>
             <p class="fragment"><strong>IF</strong> the guess is too high, display a hint</p>
             <p class="fragment"><strong>IF</strong> the guess is too low, display another hint</p>
             <p class="fragment">
-              <strong>IF</strong> it's correct, display a congrats message, as another hint
+              <strong>IF</strong> the guess is correct, display a congrats message, as another hint
             </p>
           </section>
         </section>
         <section>
           <section>
-            <h2>Hey we might have a MLP here :)</h2>
+            <h2>Hey we might have a MLP here</h2>
             <p class="fragment">
               But it's ugly
             </p>
@@ -293,13 +296,7 @@
               or Features, features, features ...
             </p>
             <p class="fragment">
-              and Features, features, features ...
-            </p>
-            <p class="fragment">
               and maybe Features, features, features ...
-            </p>
-            <p class="fragment">
-              ...Welcome to a developer life ! :-D
             </p>
           </section>
           <section data-background-image="https://media.giphy.com/media/QbumCX9HFFDQA/giphy.gif">
@@ -310,7 +307,7 @@
               Questions ?
             </p>
             <p class="small-text">
-              Sources available on <a href="https://github.com/jlevesy/introduction-to-programing">github</a>
+              Sources available on <a href="https://github.com/jlevesy/talks/introduction-to-programing">github</a>
             </p>
           </section>
         </section>
